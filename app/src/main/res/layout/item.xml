@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+
+    <CheckBox
+        android:id="@+id/buyFoodCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       ></CheckBox>
+
+    <TextView
+        android:id="@+id/BuyFoodText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/buy_foodText"
+       >
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/deleteTrashCan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_delete"
+        android:tint="@color/black">
+    </ImageView>
+
+
+</LinearLayout>
