@@ -2,31 +2,36 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal">
-
+    android:orientation="horizontal"
+    android:padding="10dp">
 
     <CheckBox
-        android:id="@+id/buyFoodCheckBox"
+        android:id="@+id/check_box"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-       ></CheckBox>
+        android:maxHeight="48dp"
+        android:maxWidth="48dp">
+    </CheckBox>
 
     <TextView
-        android:id="@+id/BuyFoodText"
-        android:layout_width="match_parent"
+        android:id="@+id/todo_text"
+        android:text="@string/buy_food_text"
+        android:textSize="20sp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/buy_foodText"
-       >
-
+        android:layout_weight="1">
     </TextView>
 
-    <ImageView
-        android:id="@+id/deleteTrashCan"
+    <ImageButton
+        android:id="@+id/deleteTrash"
+        android:src="@drawable/baseline_delete_24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@android:drawable/ic_menu_delete"
-        android:tint="@color/black">
-    </ImageView>
+        android:maxWidth="48dp"
+        android:maxHeight="48dp"
+        android:layout_gravity="end"
+       >
+    </ImageButton>
 
 
 </LinearLayout>

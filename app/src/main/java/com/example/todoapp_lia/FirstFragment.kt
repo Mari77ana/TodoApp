@@ -5,9 +5,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.todoapp_lia.databinding.FragmentFirstBinding
 
 
 class FirstFragment : Fragment() {
+    private var _binding:  FragmentFirstBinding? =  null
+    private val binding get() = _binding!!
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,8 +23,13 @@ class FirstFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_first, container, false)
+        // SetUp Binding
+        _binding = FragmentFirstBinding.inflate(layoutInflater, container, false)
+        val view = binding.root
+        return view
     }
+
+
 
 
 }
